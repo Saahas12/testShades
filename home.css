@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items h1{
+    font-weight: 200;
+}
+
+.nav-items #black-shades{
+    margin-left: 80px;
+}
+.nav-right-icons svg{
+    margin-inline: 10px;
+}
+
+.nav-options{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-options p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    margin-inline: 10px;
+}
+
+.nav-options a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-options a:checked{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* carousel slider  */
+
+
+.carousel {
+    margin-top: 38px;
+    /* margin-left: 15%;
+    margin-right: 15%; */
+}
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+/* carousel slider  */
+
+
+/* mens-collection */
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container .box {
+    width: 50%;
+    text-align: left;
+  }
+  .flex-container .box2{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .flex-container .box2 p{
+    font-size: 30px;
+  }
+
+  .flex-container .box img{
+    border-radius: 30px;
+    width: 500px;
+    height: 650px;
+    margin-top: 60px;
+    margin-left: 100px;
+    transition: all 0.3s;
+    transform: scale(1);
+  }
+
+  .box:hover img{
+    transform: scale(1.1);
+  }
+  
+
+  .flex-container .box2 button{
+    background-color: #F1E2D1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+
+
+/* mens-collection */
+
+/* women collection */
+.flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container1 .box1 {
+    width: 50%;
+    text-align: left;
+  }
+  .flex-container1 .box1{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+  }
+  
+  .flex-container1 .box1 p{
+    font-size: 30px;
+  }
+
+  .flex-container1 .box3 img{
+    border-radius: 30px;
+    width: 500px;
+    height: 650px;
+    margin-top: 60px;
+    transition: all 0.3s;
+    transform: scale(1);
+    /* margin-left: 100px; */
+  }
+  .box3:hover img{
+    transform: scale(1.1);
+  }
+
+  .flex-container1 .box1 button{
+    background-color: #F1E2D1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+
+/* women collection */
+
+
+/* children collection */
+
+.flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container2 .box1 {
+    width: 50%;
+    text-align: left;
+  }
+  .flex-container2 .box4{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .flex-container2 .box4 p{
+    font-size: 30px;
+  }
+
+  .flex-container2 .box1 img{
+    border-radius: 30px;
+    width: 500px;
+    height: 650px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    transition: all 0.3s;
+    transform: scale(1);
+  }
+  .box1:hover img{
+    transform: scale(1.1);
+  }
+
+  .flex-container2 .box4 button{
+    background-color: #F1E2D1;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+/* children collection */
+
+
+/* topBrands Products */
+
+/* .column {
+    float: left;
+    width: 32.56%;
+    padding: 5px;
+  } */
+  
+  /* Clearfix (clear floats) */
+  /* .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  } */
+
+/* .column #RayBan{
+    width: 401px;
+    height: 232px;
+}
+
+.column #Gucci{
+    width: 401px;
+    height: 250px;
+}
+.column #Prada{
+    width: 401px;
+    height: 250px;
+} */
+/* topBrands Products */
+
+
+/* footer */
+
+/* important default settings */
+
+.background {
+  /* image url  */
+  background-image: url("Footer.jpeg");
+
+  /* make the image full height */
+  height: 70vh;
+
+  /* center and scale the image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* use the following only if if you are able to scroll past the image to see a white area (this is the <body> peeking out) above or below the image */
+  overflow: hidden;
+}
+
+
+.footer-icons{
+    margin-top: 21px;
+    float: right;
+}
+
+.footer-icons #icon1{
+    margin-right: 10px;
+}
+
+.footer-icons #icon2{
+    margin-right: 10px;
+}
+/* h1 {
+  color: #fff;
+  font-size: 3em;
+  font-family: "Arial", sans-serif;
+} */
+
+
+/* footer */
