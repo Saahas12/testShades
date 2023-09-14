@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar and header  */
+
+.nav-items{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-items h1{
+    font-weight: 200;
+}
+
+.nav-items #black-shades{
+    margin-left: 80px;
+}
+.nav-right-icons svg{
+    margin-inline: 10px;
+}
+
+.nav-options{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-options p{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    margin-inline: 10px;
+}
+
+.nav-options a{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.nav-options a:checked{
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+/* navbar and header  */
+
+
+/* location-image */
+.location-image svg{
+    margin-top: 20px;
+    width: auto;
+}
+/* location-image */
+
+.contact-us-sec h1{
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
+
+.contact-us-sec h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .flex-container .box {
+    width: 50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .flex-container .box2{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: 28%;
+  }
+  
+  .flex-container .box2 p{
+    font-size: 30px;
+  }
+
+  .flex-container .box h2{
+    margin-top: 47px;
+    margin-left: 241px;
+  }
+
+  .flex-container .box p{
+    margin-left: 241px;
+  }
+  .flex-container .box2 button{
+    background-color: black;
+    padding: 10px;
+    width: 106px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+  }
+
+  /* input section */
+  .box2 input{
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    border-radius: 30px;
+    padding: 10px;
+  }
+
+  /* input section */
+
+  .follow-us-sec h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  .follow-us-sec #insta-icon{
+    margin-left: 48%
+  }
