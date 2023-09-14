@@ -1,0 +1,344 @@
+[
+    {
+        "name": "Prada Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 600,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 600,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 600,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 600,
+                "currency": "AED",
+                "rate":"3.67"
+            },
+            "canada": {
+                "amount": 600,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 600, 
+                "currency": "A$",
+                "rate":"1.54"
+            }
+        },
+        "image": "prada (1).png"
+    },
+    {
+        "name": "Gucci Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 700,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 700,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 700,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 700,
+                "currency": "AED",
+                "rate":"1.36"
+            },
+            "canada": {
+                "amount": 700,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 750, 
+                "currency": "A$",
+                "rate":"1.54" 
+            }
+        },
+        "image": "Gucci.png"
+    },
+    {
+        "name": "Cartier Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 300,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 300,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 300,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 300,
+                "currency": "AED",
+                "rate":"3.67"
+           },
+            "canada": {
+                "amount": 300,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 300, 
+                "currency": "A$",
+                "rate":"1.54"
+            }
+        },
+        "image": "Cartier.png"
+    },
+    {
+        "name": "Saint Laurent Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 600,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 600,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 600,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 600,
+                "currency": "AED",
+                "rate":"3.67"
+           },
+            "canada": {
+                "amount": 600,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 600, 
+                "currency": "A$",
+                "rate":"1.54"
+            }
+        },
+        "image": "./MEN/Saint_LAurent_Eye.webp"
+    },
+    {
+        "name": "Gucci Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 700,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 700,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 700,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 700,
+                "currency": "AED",
+                "rate":"1.36"
+            },
+            "canada": {
+                "amount": 700,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 750, 
+                "currency": "A$",
+                "rate":"1.54" 
+            }
+        },
+        "image": "./MEN/Gucci_Eye.webp"
+    },
+    {
+        "name": "Prada Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 800,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 800,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 800,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 800,
+                "currency": "AED",
+                "rate":"3.67"
+            },
+            "canada": {
+                "amount": 800,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 800, 
+                "currency": "A$",
+                "rate":"1.54"
+            }
+        },
+        "image": "MEN/Prada.webp"
+    },
+    {
+        "name": "Dita Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 600,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 600,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 600,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 600,
+                "currency": "AED",
+                "rate":"3.67"
+            },
+            "canada": {
+                "amount": 600,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 600, 
+                "currency": "A$",
+                "australia":"1.55"
+            }
+        },
+        "image": "MEN/Dita.webp"
+    },
+    {
+        "name": "Off-White Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 700,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 700,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 700,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 700,
+                "currency": "AED",
+                "rate":"3.67"
+            },
+            "canada": {
+                "amount": 700,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 700, 
+                "currency": "A$",
+                "australia":"1.55"
+            }
+        },
+        "image": "MEN/Off-whiteM.webp"
+    },
+    {
+        "name": "Versace Sunglasses",
+        "category": "Symoble rectangle-frame sunglasses",
+        "prices": {
+            "usa": {
+                "amount": 850,
+                "currency": "$",
+                "rate":"1"
+            },
+            "uk": {
+                "amount": 850,
+                "currency": "£",
+                "rate":"0.79"
+            },
+            "india": {
+                "amount": 850,
+                "currency": "₹",
+                "rate":"82.66"
+            },
+            "dubai": {
+                "amount": 850,
+                "currency": "AED",
+                "rate":"3.67"
+            },
+            "canada": {
+                "amount": 850,
+                "currency": "CAD",
+                "rate":"1.36"
+            },
+
+            "australia": { 
+                "amount": 850, 
+                "currency": "A$",
+                "australia":"1.55"
+            }
+        },
+        "image": "MEN/Versace_Eye.webp"
+    }
+]

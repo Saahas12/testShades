@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHADES</title>
+    <link rel="stylesheet" href="singlePP.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+    <main class="container">
+
+        <!-- Left Column / Headphones Image -->
+        <div class="left-column">
+            <img data-image="black" src="images/black.png" alt="">
+            <img data-image="blue" src="images/blue.png" alt="">
+            <img data-image="red" class="active" src="prada (1).png" alt="">
+        </div>
+
+        <!-- Right Column -->
+        <div class="right-column">
+
+            <!-- Product Description -->
+            <div class="product-description">
+                <span>Headphones</span>
+                <h1>Beats EP</h1>
+                <p>The preferred choice of a vast range of acclaimed DJs. Punchy, bass-focused sound and high isolation.
+                    Sturdy headband and on-ear cushions suitable for live performance</p>
+            </div>
+
+            <!-- Product Configuration -->
+            <div class="product-configuration">
+
+                <!-- Product Color -->
+                <div class="product-color">
+                    <span>Color</span>
+
+                    <div class="color-choose">
+                        <div>
+                            <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                            <label for="red"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="blue" type="radio" id="blue" name="color" value="blue">
+                            <label for="blue"><span></span></label>
+                        </div>
+                        <div>
+                            <input data-image="black" type="radio" id="black" name="color" value="black">
+                            <label for="black"><span></span></label>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Cable Configuration -->
+                <div class="cable-config">
+                    <span>Cable configuration</span>
+
+                    <div class="cable-choose">
+                        <button>Straight</button>
+                        <button>Coiled</button>
+                        <button>Long-coiled</button>
+                    </div>
+
+                    <a href="#">How to configurate your headphones</a>
+                </div>
+            </div>
+
+            <!-- Product Pricing -->
+            <div class="product-price">
+                <span id="productPrice"></span>
+                <a href="#" class="cart-btn" id="payButton">Proceed To Checkout</a>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript">
+
+    document.getElementById('payButton'), addEventListener('click', function () {
+        const productPriceElement = document.getElementById('productPrice');
+    
+        // Retrieve the selected location from localStorage
+        const selectedLocation = localStorage.getItem('selectedLocation') || 'usa';
+    
+        // Fetch the price for the selected location from your JSON data (use the same data source as the first page)
+        fetch('products1 copy.json') // Replace with the path to your JSON data file
+            .then(response => response.json())
+            .then(data => {
+                console.log('JSON Data:', data); // Debugging: Log the JSON data
+    
+                const selectedPrice = getPriceForLocation(data, selectedLocation);
+                console.log('Selected Price:', selectedPrice); // Debugging: Log the selected price
+                const convertedPriceUSD = selectedPrice.amount * parseFloat(selectedPrice.rate);
+    
+                // Display the converted price
+                productPriceElement.textContent = `${selectedPrice.currency}${convertedPriceUSD.toFixed(2)}`;
+    
+                // Initialize Razorpay with the converted price in the smallest currency unit
+                const razorpayAmount = Math.round(convertedPriceUSD * 100); // Convert to paise or cents
+                initializeRazorpay(razorpayAmount);
+            })
+            .catch(error => {
+                console.error('Error fetching price:', error);
+            });
+    });
+    
+    // Function to fetch the price for the selected location
+    function getPriceForLocation(data, location) {
+        console.log('Fetching Price for Location:', location); // Debugging: Log the selected location
+    
+        const productInfo = data.find(item => item.prices[location]);
+    
+        if (productInfo && productInfo.prices[location]) {
+            const selectedPrice = productInfo.prices[location];
+            if (selectedPrice) {
+                return selectedPrice;
+            }
+        }
+    
+        // Default to a price with zero amount if not found
+        return { amount: 0, currency: '', rate: 1 };
+    }
+    
+    // Function to initialize Razorpay with the converted price
+    function initializeRazorpay(amount) {
+        const options = {
+            key: 'rzp_test_hlpF6iumc3EbGf', // Replace with your Razorpay key
+            amount: amount, // Amount in the smallest currency unit (paise or cents)
+            currency: 'USD', // Currency code (USD for US Dollars)
+            name: 'Your Company Name',
+            description: 'Product Description',
+            image: 'your_logo.png', // URL of your company logo (optional)
+            handler: function (response) {
+                // Handle the success response here (e.g., update your database)
+                alert('Payment successful! Payment ID: ' + response.razorpay_payment_id);
+            },
+            prefill: {
+                name: 'John Doe',
+                email: 'john@example.com',
+                contact: '1234567890',
+            },
+            theme: {
+                color: '#F37254', // Customize the color (optional)
+            },
+        };
+    
+        const rzp = new Razorpay(options);
+        rzp.open();
+    }
+</script>
+
+      
+</body>
+
+</html>
